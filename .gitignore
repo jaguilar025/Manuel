@@ -1,0 +1,29 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+
+# Rust
+src-tauri/target
+
+# Tauri-generated schemas (regenerated on build)
+src-tauri/gen/
+
+# Build artifacts (.deb / .AppImage) live under target/ so already ignored,
+# but list explicitly in case anyone runs cargo with a custom out dir.
+*.deb
+*.AppImage
+
+# IDE
+.vscode
+.idea
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local clones / scratch work (don't ship someone else's source)
+antimicrox/
+

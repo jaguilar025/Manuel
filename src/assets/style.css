@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Ubuntu", sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm
+           bg-bg-panel hover:bg-bg-soft border border-white/5
+           transition disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-accent/90 hover:bg-accent text-white border-accent;
+  }
+  .input {
+    @apply w-full bg-bg-soft border border-white/5 rounded-md px-2 py-1.5
+           text-sm text-slate-100 focus:outline-none focus:border-accent;
+  }
+  /* Force dark dropdown options regardless of OS theme. */
+  select.input {
+    color-scheme: dark;
+  }
+  select.input option {
+    @apply bg-bg-soft text-slate-100;
+  }
+  .tab-link {
+    @apply px-4 py-2 text-sm rounded-md text-slate-400 hover:text-slate-100
+           hover:bg-bg-panel transition;
+  }
+  .tab-link-active {
+    @apply text-slate-100 bg-bg-panel;
+  }
+}
