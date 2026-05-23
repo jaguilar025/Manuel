@@ -37,7 +37,7 @@ onMounted(async () => {
       <RouterView />
     </main>
     <footer class="px-4 py-2 border-t border-white/5 text-[11px] text-slate-500 text-right">
-      by jaacker25 | 2026
+      by jaguilar025 | 2026
     </footer>
   </div>
 </template>

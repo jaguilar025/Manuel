@@ -198,4 +198,4 @@ Uso personal. Sin garantías.
 
 ---
 
-by **jaacker25** | 2026
+by **jaguilar025** | 2026
