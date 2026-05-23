@@ -156,7 +156,7 @@ sudo apt install -y build-essential pkg-config libssl-dev \
   libwebkit2gtk-4.1-dev libgtk-3-dev libayatana-appindicator3-dev \
   librsvg2-dev libudev-dev
 
-git clone <repo-url> manuel
+git clone https://github.com/jaguilar025/Manuel.git manuel
 cd manuel
 npm install
 
